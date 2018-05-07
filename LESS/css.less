@@ -2,7 +2,7 @@
 @nice-blue: #5B83AD;
 @light-blue: @nice-blue + #111;
 .border{border:dotted 1px black;}
-
+@number:12px;
 #header {
   color: @light-blue;
 }
@@ -21,6 +21,10 @@ h1{
   width: 1200px;
   height: 200px;
   .border;
+  p{
+        color: @color;
+        font-size: @number;
+    };
 }
 /*
 @media screen and (max-width:1200px){
