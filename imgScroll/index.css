@@ -1,0 +1,83 @@
+/*
+* @Author: Marte
+* @Date:   2018-05-08 09:49:56
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-05-08 13:58:06
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+
+body{
+    padding:20px;
+}
+#container{
+    position: relative;
+    width:400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid #333;
+}
+#list{
+    position: absolute;
+    z-index: 1;
+    width:2000px;
+    height: 400px;
+}
+#list img{
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+#buttons{
+    position:absolute;
+    left:166px;
+    bottom: 20px;
+    z-index:2;
+}
+#buttons span{
+    float:left;
+    margin-right: 5px;
+    width:10px;
+    height:10px;
+    border:1px solid #f00;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+#buttons .on {
+    background: orangered;
+}
+.arrow{
+    position:absolute;
+    top:180px;
+    z-index:2;
+    display: none;
+    width:40px;
+    height:40px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    color:#fff;
+    background-color: rgba(0,0,0,.3);
+    cursor:pointer;
+}
+.arrow:hover{
+    background-color:rgba(0,0,0,.7)
+}
+#container:hover .arrow{
+    display:block;
+}
+#prev{
+    left:20px;
+}
+#next{
+    right:20px;
+}
